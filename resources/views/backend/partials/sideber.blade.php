@@ -14,16 +14,11 @@
     <!--navigation-->
     <ul class="metismenu" id="menu">
         <li>
-            <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class='bx bx-home-circle'></i>
-                </div>
+            <a href="/dashboard" >
+                <div class="parent-icon"><i class='bx bx-home-circle'></i></div>
                 <div class="menu-title">Dashboard</div>
             </a>
-            <ul>
-                <li> <a href="/dashboard"><i class="bx bx-right-arrow-alt"></i>Dashboard</a></li>
-            </ul>
         </li>
-
         <!--Manage Category  -->
         @if ($user->can('category-list') or $user->can('transactions-list'))
             <li>
